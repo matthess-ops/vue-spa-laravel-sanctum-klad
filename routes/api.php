@@ -27,3 +27,7 @@ Route::put('/client/{id}','ClientController@update');
 
 Route::post('/upload', 'FileController@upload');
 
+
+Route::apiResource('product', 'Api\ProductController');
+
+

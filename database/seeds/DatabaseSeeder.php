@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
         factory(App\User::class)->create(['name' => 'matthijn', 'email' => 'matthijn@gmail.com', 'password' => bcrypt('password')]);
         //  App\Crud::class->count(3)->create();
         $this->call(ClientsTableSeeder::class);
+        $this->call(ProductTableSeeder::class);
 
 
 
