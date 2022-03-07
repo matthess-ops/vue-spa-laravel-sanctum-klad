@@ -30,4 +30,11 @@ Route::post('/upload', 'FileController@upload');
 
 Route::apiResource('product', 'Api\ProductController');
 
+// Verb          Path                        Action  Route Name
+// GET           /users                      index   users.index
+// POST          /users                      store   users.store
+// GET           /users/{user}               show    users.show
+// PUT|PATCH     /users/{user}               update  users.update
+// DELETE        /users/{user}               destroy users.destroy
+
 

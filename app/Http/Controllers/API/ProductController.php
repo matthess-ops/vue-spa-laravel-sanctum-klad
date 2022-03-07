@@ -32,7 +32,25 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        error_log("enter product store");
+        error_log(print_r($request->all(),true));
+
+        $validatedData = $request->validate([
+            'product_name' => 'required|min:3',
+            'product_code' => 'required|min:3',
+            'product_amount' => 'required|numeric',
+        ]);
+
+        $product = new Product;
+        $product->product_name = $request->product_name;
+        $product->product_code = $request->product_code;
+        $product->product_amount = $request->product_amount;
+        error_log("data assigned");
+
+        $product->save();
+        error_log("product saved");
+
+        // Todo::create($request->all());
     }
 
     /**

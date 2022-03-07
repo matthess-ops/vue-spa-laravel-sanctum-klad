@@ -3,8 +3,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Product;
-class ProductTableSeeder extends Seeder
+use App\Post;
+class PostTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,6 +14,6 @@ class ProductTableSeeder extends Seeder
     public function run()
     {
         $count = 5;
-        factory(Product::class, $count)->create();
+        factory(Post::class, $count)->create();
     }
 }
