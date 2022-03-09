@@ -15,7 +15,10 @@
         "laravel/framework": "^7.0",
         "laravel/sanctum": "^2.14",
         "laravel/tinker": "^2.0",
-        "laravel/ui": "*"
+        "laravel/ui": "*",
+        "paquettg/php-html-parser": "*",
+        "voku/simple_html_dom": "^4.8",
+        "yangqi/htmldom": "^1.0"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
